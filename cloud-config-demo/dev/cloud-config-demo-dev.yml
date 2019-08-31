@@ -1,0 +1,15 @@
+azure:
+  activedirectory:
+    tenant-id: <tenant-id>
+    active-directory-groups: DEV-ADMINS
+    
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+                 azure:
+                   client-id: <client-id>
+                   client-secret: <client-secret>
+                   scope: openid
+                   resource: https://graph.microsoft.com
